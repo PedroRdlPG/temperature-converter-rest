@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "Temperature Converter Rest",
   "main": "app.js",
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": ["json", "html"]
+  },
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "test": "jest"
+    "test": "jest --forceExit --coverage"
   },
-  "author": "Pedro Ruiz de la Pena",
+  "author": "Enrique Sanchez",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
